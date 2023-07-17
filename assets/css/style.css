@@ -25,6 +25,12 @@ body{
 .debug #site_header{
     height: 70px;
 }
+/* .debug .container_nav{
+    background-color: aquamarine;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+} */
 
 
 /* mobile first */
@@ -38,8 +44,17 @@ body{
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+.logo, .menù{
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.menù{
+    justify-content: end;
+}
 /* #endregion header */
 
 /* #region main */
