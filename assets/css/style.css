@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: auto;
 }
 
-:root{
+:root {
     --rsp-primary: #9792E4;
     --rsp-secondary: #FFFFFF;
     --rsp-heanvenly: #0084FD;
@@ -16,15 +17,17 @@ body{
     --rsp-special: #FDC15F;
     --rsp-footer: #333333;
 }
+.btn{
+    border-radius: 2rem;
+    border: 0;
+}
 
 /* utilities */
 
 
 /* debug */
 
-.debug #site_header{
-    height: 70px;
-}
+
 /* .debug .container_nav{
     background-color: aquamarine;
     width: 90%;
@@ -37,23 +40,38 @@ body{
 
 /* #region header */
 
-#site_header{
+#site_header {
     background-color: var(--rsp-heanvenly);
     min-width: 375px;
     width: 100%;
     margin: auto;
+    padding: 1rem 0.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo, .menù{
+.container-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.menù,
+.menù_desk {
     margin: 0 1.5rem;
     display: flex;
     align-items: center;
 }
-.menù{
+
+.menù {
     justify-content: end;
+}
+
+.menù_desk {
+    display: none;
 }
 
 /* tablet */
@@ -61,19 +79,68 @@ body{
 /* #region query tablet */
 
 @media screen and (min-width: 768px) {
-    #site_header{
+    #site_header {
         background-color: var(--rsp-heanvenly);
         min-width: 768px;
         width: 100%;
+        padding: 1rem 0.25rem;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    .menù_desk {
+        display: none;
+    }
 }
+
 /* #endregion query tablet */
 
 /* #region query desktop */
+
+@media screen and (min-width: 1152px) {
+    #site_header {
+        background-color: var(--rsp-heanvenly);
+        min-width: 1152px;
+        max-width: 1440px;
+        width: 100%;
+        padding: 1rem 0.25rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-nav {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menù {
+        display: none;
+    }
+    .menù_desk{
+        display: block;
+    }
+    .menù_desk > a{
+        padding: 0.5rem;
+        text-decoration: none;
+        color: var(--rsp-secondary);
+    }
+    .btn-white{
+        padding: 0.5rem;
+        background-color: var(--rsp-secondary);
+    }
+    .btn-white > a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+}
 
 
 /* #region query desktop */
