@@ -39,7 +39,7 @@ body{
 
 #site_header{
     background-color: var(--rsp-heanvenly);
-    max-width: 375px;
+    min-width: 375px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -55,6 +55,32 @@ body{
 .menù{
     justify-content: end;
 }
+
+/* tablet */
+
+/* #region query tablet */
+
+@media screen and (min-width: 768px) {
+    #site_header{
+        background-color: var(--rsp-heanvenly);
+        min-width: 768px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+/* #endregion query tablet */
+
+/* #region query desktop */
+
+
+/* #region query desktop */
+
+
+
+
 /* #endregion header */
 
 /* #region main */
