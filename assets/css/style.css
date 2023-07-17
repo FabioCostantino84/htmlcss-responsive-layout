@@ -1,5 +1,55 @@
+/* common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: auto;
+}
+
+:root{
+    --rsp-primary: #9792E4;
+    --rsp-secondary: #FFFFFF;
+    --rsp-heanvenly: #0084FD;
+    --rsp-light-heanvenly: #B5DDFF;
+    --rsp-special: #FDC15F;
+    --rsp-footer: #333333;
+}
+
+/* utilities */
+
+
+/* debug */
+
+.debug #site_header{
+    height: 70px;
+}
+
+
+/* mobile first */
+
+/* #region header */
+
+#site_header{
+    background-color: var(--rsp-heanvenly);
+    max-width: 375px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* #endregion header */
+
+/* #region main */
+
+
+
+/* #endregion main */
+
+/* #region footer */
+
+
+
+/* #endregion footer */
