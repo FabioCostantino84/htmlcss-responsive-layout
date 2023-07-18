@@ -31,6 +31,10 @@ p{
     --rsp-special: #FDC15F;
     --rsp-footer: #333333;
 }
+.col-12{
+    width: 100%;
+    padding: 1rem 0;
+}
 
 .btn {
     border-radius: 2rem;
@@ -172,19 +176,51 @@ p{
     aspect-ratio: 1;
     padding: 2rem;
 }
-.card-text>p, h3{
+.card-testimonials-text>p, h3{
     color: white;
+}
+.benefits{
+    background-color: var(--rsp-primary);
+}
+.benefits h2{
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.card-benefits{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    width: 95%;
+    margin: auto;
+}
+.card-benefits h3{
+    color: var(--rsp-primary);
+    padding: 1rem 0;
+}
+.card-benefits div{
+    color: var(--rsp-primary);
+    padding: 1rem 0;
+}
+.card-benefits>div{
+    font-size: 40px;
+    font-weight: bold;
 }
 .btn-skills {
     background-color: var(--rsp-heanvenly);
     padding: 0.5rem 1.5rem;
     font-weight: 700;
     margin: 1.5rem;
-
 }
 
-.btn-skills>a {
+.btn-skills>a, .btn-more>a{
     color: white;
+}
+.btn-more {
+    background-color: var(--rsp-primary);
+    padding: 0.5rem 2.5rem;
+    font-weight: 700;
+    margin: 1rem;
 }
 
 /* #region main */
