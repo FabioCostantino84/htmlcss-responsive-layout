@@ -10,6 +10,7 @@ body {
 }
 
 p{
+    line-height: 1.5rem;
     padding: 1.5rem 0;
 }
 
@@ -112,7 +113,42 @@ p{
     width: 100%;
     margin: auto;
 }
+.planning{
+    background-color: var(--rsp-primary);
+}
+.planning>.container{
+    padding: 2rem 0;
+}
+.card-planning img{
+    width: 100%;
+    margin: auto;
+    padding: 4rem 3rem;
+}
+.card-planning h2, .card-planning p{
+    padding: 2rem 2.5rem;
+    color: white;
+}
 
+.second-card-planning{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50px;
+}
+.second-card-planning{
+    text-align: center;
+}
+.second-card-planning img{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.second-card-planning i{
+    background-color: var(--rsp-primary);
+    border-radius: 50%;
+    padding: 1rem;
+}
 .btn-skills {
     background-color: var(--rsp-heanvenly);
     padding: 0.5rem 1.5rem;
