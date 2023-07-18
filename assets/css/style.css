@@ -172,6 +172,9 @@ p{
     aspect-ratio: 1;
     padding: 2rem;
 }
+.card-text>p, h3{
+    color: white;
+}
 .btn-skills {
     background-color: var(--rsp-heanvenly);
     padding: 0.5rem 1.5rem;
