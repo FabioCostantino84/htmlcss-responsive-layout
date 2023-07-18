@@ -14,7 +14,11 @@ p{
 }
 
 .container {
-    width: 85%;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    width: 90%;
     margin: auto;
 }
 
@@ -89,23 +93,23 @@ p{
 
 /* #region main */
 
-.skills-card {
+.card {
     width: 100%;
     background-color: var(--rsp-light-heanvenly);
-    text-align: center;
     padding: 1.5rem 1.5rem 0 1.5rem;
     margin-top: 1.5rem;
     border-radius: 25px;
-    line-height: 1.5rem;
 }
 
-.skills-card>h2, .skills-card>i {
+.card h2, .card i{
     color: var(--rsp-heanvenly);
+    line-height: 1.5rem;
+    text-align: center;
     padding: 1rem;
 }
 
-.skills-card img {
-    width: 90%;
+.card-image img{
+    width: 100%;
     margin: auto;
 }
 
@@ -146,17 +150,26 @@ p{
     /* main tablet */
 
     .container{
+        width: 100%;
+    }
+    .row{
         display: flex;
         flex-wrap: wrap;
+    }
+    div[class^="col-"]{
+        padding: 0 1rem;
     }
     .col-4{
         width: calc(100% / 12 * 4);
     }
-    .col-8{
-        width: calc(100% /12 * 8)
+    .col-6{
+        width: calc(100% / 12 * 6);
     }
-    .skills-card{
-        border: 0.75rem solid white;
+    .col-8{
+        width: calc(100% / 12 * 8);
+    }
+    .col-12{
+        width: 100%;
     }
 }
 
