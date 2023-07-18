@@ -346,6 +346,10 @@ div[class^="col-"]{
     .banner-bottom> .container{
         width: 80%;
     }
+    .container-foot{
+        width: 60%;
+        margin: auto;
+    }
 
     .row{
         display: flex;
