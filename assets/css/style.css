@@ -302,6 +302,22 @@ p{
     .container{
         width: 100%;
     }
+    .planning>.container, .testimonials>.container{
+        width: 90%;
+    }
+    
+    .card-testimonials{
+        display: flex;
+        text-align: left;
+        border-radius: 35px;
+        padding: 2rem 0.5rem 2.5rem;
+    }
+    .card-image-testimonials img {
+        padding: 0.25rem;
+    }
+    .card-testimonials-text{
+        padding: 0 1rem;
+    }
     .row{
         display: flex;
         flex-wrap: wrap;
@@ -322,6 +338,7 @@ p{
         width: 100%;
     }
 }
+
 
 /* #endregion query tablet */
 
