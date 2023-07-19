@@ -382,7 +382,6 @@ div[class^="col-"]{
     #site_header {
         background-color: var(--rsp-heanvenly);
         min-width: 1152px;
-        max-width: 1440px;
         width: 100%;
         padding: 1rem 0.25rem;
         margin: auto;
@@ -392,11 +391,22 @@ div[class^="col-"]{
     }
 
     .container-nav {
-        width: 70%;
+        width: 80%;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .planning>.container{
+        width: 70%;
+        display: flex;
+    }
+    .card-planning{
+        padding: 0 2rem;
+    }
+    .second-card-planning{
+        width: 80%;
+        margin-top: 2rem;
     }
 
     .menù {
@@ -422,6 +432,28 @@ div[class^="col-"]{
 
     .btn-white>a {
         color: black;
+    }
+    div[class^="col-"]{
+        padding: 1rem 1rem;
+    }
+    .col-4-bg{
+        width: calc(100% / 12 * 4);
+    }
+    .col-6-bg{
+        width: calc(100% / 12 * 6);
+    }
+    .col-8-bg{
+        width: calc(100% / 12 * 8);
+    }
+    .col-12-bg{
+        width: 100%;
+    }
+    .services>.container{
+        width: 80%;
+        margin: auto;
+    }
+    .card-bg{
+        display: flex;
     }
 }
 
